@@ -30,7 +30,10 @@ imageLinks.forEach(({ url, img, alt }) => {
     image.style.width = '150px';
     image.style.height = 'auto';
 
+    const div = document.createElement('div');
+    div.className = 'u-flex u-justify-center';
     link.appendChild(image);
-    container.appendChild(link);
+    div.append(link)
+    container.appendChild(div);
 });
 
