@@ -27,7 +27,7 @@ imageLinks.forEach(({ url, img, alt }) => {
     image.src = img;
     image.alt = alt;
     image.className = 'img-responsive u-shadow-sm';
-    image.style.width = '150px';
+    image.style.maxWidth = '200px';
     image.style.height = 'auto';
 
     const div = document.createElement('div');
