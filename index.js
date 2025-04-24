@@ -28,18 +28,17 @@ const gridContainer = document.querySelector('#linked-games');
 const createGameCard = ({ url, img, title, color }) => {
     const link = document.createElement("a");
     link.href = url;
-    link.style = 'max-width: 250px;';
 
     const card = document.createElement('div');
     card.className = 'card';
-    card.style = `box-shadow: 0px 0px 15px 5px ${color + shadowAlpha};`;
+    card.style.boxShadow = `0px 0px 15px 5px ${color + shadowAlpha}`;
     // Scale card up when hovering over it
     card.addEventListener('mouseenter', () => {
-        card.style = `box-shadow: 0px 0px 15px 10px ${color + shadowAlphaHover};`;
+        card.style.boxShadow = `0px 0px 15px 5px ${color + shadowAlphaHover}`;
         card.style.scale = 1.1;
     })
     card.addEventListener('mouseleave', () => {
-        card.style = `box-shadow: 0px 0px 15px 10px ${color + shadowAlpha};`;
+        card.style.boxShadow = `0px 0px 15px 5px ${color + shadowAlpha}`;
         card.style.scale = 1;
     })
 
@@ -50,6 +49,8 @@ const createGameCard = ({ url, img, title, color }) => {
     image.src = img;
     image.alt = title + ' Logo';
     image.className = 'img-responsive bg-dark';
+    image.style.width = '250px';
+    image.style.height = '250px';
 
     const p = document.createElement('p');
     p.className = 'title';
