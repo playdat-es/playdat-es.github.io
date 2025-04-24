@@ -1,4 +1,4 @@
-// Example data
+// List of games
 const games = [
     {
       url: 'https://spyfall.playdat.es/',
@@ -8,12 +8,12 @@ const games = [
     {
         url: 'https://example.com/page1',
         img: 'assets/logo.png',
-        title: 'Logo 1'
+        title: 'Game 1'
     },
     {
         url: 'https://example.com/page1',
         img: 'assets/logo.png',
-        title: 'Logo 2'
+        title: 'Game 2'
     },
 ];
 
@@ -32,7 +32,7 @@ const createGameCard = ({ url, img, title }) => {
 
     const image = document.createElement('img');
     image.src = img;
-    image.alt = title;
+    image.alt = title + ' Logo';
     image.className = 'img-responsive bg-dark';
 
     const p = document.createElement('p');
