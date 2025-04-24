@@ -1,7 +1,7 @@
 // Example data
 const games = [
     {
-      url: 'https://example.com/page1',
+      url: 'https://spyfall.playdat.es/',
       img: 'assets/spyfall_logo.svg',
       title: 'Spyfall'
     },
