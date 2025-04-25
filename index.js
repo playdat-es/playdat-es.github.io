@@ -20,7 +20,7 @@ const games = [
     },
 ];
 
-const shadowAlpha = '66';   // 40% opacity in hex
+const shadowAlpha = '80';   // 50% opacity in hex
 const shadowAlphaHover = 'CC';   // 80% opacity in hex
 
 const gridContainer = document.querySelector('#linked-games');
