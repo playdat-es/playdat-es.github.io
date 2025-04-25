@@ -30,16 +30,14 @@ const createGameCard = ({ url, img, title, color }) => {
     link.href = url;
 
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card hover-grow';
     card.style.boxShadow = `0px 0px 15px 5px ${color + shadowAlpha}`;
-    // Scale card up when hovering over it
+    // Increase glow when hovering over card
     card.addEventListener('mouseenter', () => {
         card.style.boxShadow = `0px 0px 15px 5px ${color + shadowAlphaHover}`;
-        card.style.scale = 1.1;
     })
     card.addEventListener('mouseleave', () => {
         card.style.boxShadow = `0px 0px 15px 5px ${color + shadowAlpha}`;
-        card.style.scale = 1;
     })
 
     const cardContent = document.createElement('content');
