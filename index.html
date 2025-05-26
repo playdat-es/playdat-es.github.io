@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html id="page">
     <head>
-        <title>PlayDat</title>
+        <title>playdat.es</title>
+        <link rel="icon" href="/assets/icon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
         <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" ></script> 
     </head>
-    <body>
-        <section class="section">
-            <div class="banner">
-                <div class="content">
-                    <div class="text-center">
-                        <h1>👋 Hello world!</h1>
-                        <h6 class="font-alt font-light">A webpage powered by <b>Cirrus.</b></h6>
-                    </div>
+    <body class="u-flex u-flex-column min-h-screen bg-light">
+        <section>
+            <div class="content text-dark pt-4 pb-2">
+                <div class="u-flex u-justify-center">
+                    <img class="w-10" src="assets/playdat_bunny.svg" alt="playdat logo" />
+                    <h1 style="font-family: 'Playpen Sans', cursive; font-size: calc(40px + 1vw);" class="text-black">playdat.es</h1>
+                </div>
+                <div class="u-flex u-justify-center">
+                    <p style="font-size: 1.2rem;" class="font-style-italic">no disponible en español :(</p>
                 </div>
             </div>
         </section>
+        <section>
+            <div class="content" style="max-width: 900px;">
+                <div id="linked-games" class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 u-row-gap-3 u-text-center" style="justify-items: center; align-items: center;"></div>
+            </div>
+        </section>
+        <footer class="footer py-0 mt-auto" style="background-color:transparent;">
+            <div class="u-flex-row u-gap-1 u-center u-items-center py-1">
+                <div>
+                    <a class="icon" href="https://github.com/playdat-es">
+                        <i class="fab fa-github text-dark"></i>
+                    </a>
+                    <a href="https://github.com/playdat-es" class="u u-LR">/playdat-es</a>
+                </div>
+                <div style="border-left:2px solid;height:18px"></div>
+                <subtitle>© 2025</subtitle>
+            </div>
+        </footer>
+        <script src="index.js"></script>
     </body>
 </html>
